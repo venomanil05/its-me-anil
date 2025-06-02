@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="char.css">
+</head>
+<body>
+    <h1 style="margin: 0px -320px 600px -450px;">This count how many characters in your sentences or in paragraphs.</h1>
+    <div class="container">
+        <h2>Real Time Char Counter</h2>
+        <textarea  id="textarea" class="textarea" placeholder="Please write your text here.." maxlength="5000"></textarea>
+        <div class="counter">
+            <p>
+                Total Character:
+                <span id="total-char" class="total-char"></span>
+            </p>
+            <p>
+                Remaining Character:
+                <span id="remaining-char" class="remaining-char"></span>
+            </p>
+        </div>
+    </div>
+
+
+    <script src="char.js"></script>
+</body>
+</html>

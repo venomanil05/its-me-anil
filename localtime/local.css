@@ -1,0 +1,69 @@
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --clock-color: #ff00ae;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s, color 0.4s;
+}
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #121212;
+  /* Don't override --clock-color here */
+}
+
+.clock-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+#clock {
+  font-size: 3rem;
+  color: var(--clock-color);
+  margin: 20px 0;
+}
+
+#date, #location {
+  font-size: 2rem;
+  margin: 5px 0;
+}
+
+#timezone-select,
+#color-picker,
+#toggle-theme {
+  margin-top: 15px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+#color-picker {
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#toggle-theme {
+  margin-top: 20px;
+  background-color: var(--clock-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#toggle-theme:hover {
+  opacity: 0.85;
+}
