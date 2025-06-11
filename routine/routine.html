@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Routine Tracker</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="routine.css" />
+</head>
+<body>
+  <header>
+    <h1>Daily Routine Tracker</h1>
+  </header>
+
+  <main>
+    <section id="calendarSection" data-aos="fade-right">
+      <!-- Hamro Patro Nepali Calendar iframe - big and responsive -->
+      <iframe
+        src="https://www.hamropatro.com/widgets/nepali-calendar?theme=dark&size=large"
+        style="border:none; width:100%; height:500px;"
+        title="Nepali Calendar"
+        allowtransparency="true"
+      ></iframe>
+    </section>
+
+    <section id="daySection" data-aos="fade-up">
+      <div>
+        <h2>Day <span id="dayNumber"></span></h2>
+        <div>English Date: <span id="adDate"></span></div>
+        <div id="startDateDisplay" style="font-size:0.9em; color:#4a0072; margin-bottom:10px;"></div>
+        <textarea id="dayNote" placeholder="Write what you did today..."></textarea>
+        <button id="saveNoteBtn">Save Note</button>
+        <button id="resetBtn" style="background:#d32f2f; margin-left:10px;">Reset Tracker</button>
+      </div>
+      <div id="allDays">
+        <h3>All Days Notes:</h3>
+        <ul id="dayList"></ul>
+      </div>
+      <button id="addDayBtn">Add New Day</button>
+    </section>
+
+    <section id="motivationSection" data-aos="fade-up">
+      <h2>Positive Motivation</h2>
+      <div id="quoteText" class="quote"></div>
+      <button id="newQuoteBtn">New Quote</button>
+
+      <h3>Favorite Motivational Videos</h3>
+      <input id="videoURL" type="text" placeholder="Enter YouTube video URL" />
+      <button id="addVideoBtn">Add Video</button>
+      <div id="videoList"></div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="routine.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f3f7;
+  color: #3a0ca3;
+}
+
+header {
+  background-color: #6a4c93;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Sections */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Calendar */
+#calendarSection iframe {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #b39ddb;
+}
+
+/* Day notes */
+#daySection {
+  background: white;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #b39ddb;
+}
+
+#dayNote {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #6a4c93;
+  font-size: 1em;
+  resize: vertical;
+  font-family: inherit;
+}
+
+button {
+  background-color: #6a4c93;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4b367c;
+}
+
+#resetBtn {
+  background-color: #d32f2f;
+}
+
+#resetBtn:hover {
+  background-color: #a52727;
+}
+
+#allDays {
+  margin-top: 20px;
+}
+
+#dayList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#dayList li {
+  background-color: #ede7f6;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #3a0ca3;
+}
+
+/* Motivation section */
+#motivationSection {
+  margin-top: 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #b39ddb;
+}
+
+.quote {
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 20px 0;
+  color: #4a0072;
+}
+
+#videoList {
+  margin-top: 15px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #b39ddb;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  main {
+    padding: 0 10px;
+  }
+
+  #calendarSection iframe {
+    height: 350px;
+  }
+}
